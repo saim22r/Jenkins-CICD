@@ -11,3 +11,8 @@
 - Build job to see if it is successful
 - If you have another job to execute after this choose `add post build action`
 - Choose `build other projects` and add the project to build
+
+## CI/CD
+- On the relevant GitHub repo click on settings -> webhook and create a webhook
+- Name the webhook and the URL is `http://JENKINSIP/github-webhook/` make sure deploy key is read/write
+- Create a new job 
