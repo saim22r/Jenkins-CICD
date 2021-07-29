@@ -12,7 +12,14 @@
 - If you have another job to execute after this choose `add post build action`
 - Choose `build other projects` and add the project to build
 
-## CI/CD
+## Check build
+- Click on the job and choose `build now`
+- Navigate to build history and choose your build
+- Click the drop down and choose console output to check if the build was successful or failed
+
+## Creating a webhook
 - On the relevant GitHub repo click on settings -> webhook and create a webhook
-- Name the webhook and the URL is `http://JENKINSIP/github-webhook/` make sure deploy key is read/write
-- Create a new job 
+- Name the webhook and the URL is `http://JENKINSIP:PORT/github-webhook/` make sure deploy key is read/write
+
+## Jenkins pipeline and GitHub
+Create a new job 
