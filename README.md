@@ -37,5 +37,10 @@
 - Change branches to build to `*/main`
 - Tick `GitHub hook trigger for GITScm polling`
 - Tick `Provide Node & npm bin/ folder to PATH`
-- Choose `build execute shell` and enter `cd app` - `npm install` - `npm test`
-- Save and check the build
+- Choose `build execute shell` and enter 
+  ```
+  cd app 
+  npm install  
+  npm test
+  ```
+- Save and check the build by clicking `BUILD NOW`
