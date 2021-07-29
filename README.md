@@ -44,3 +44,21 @@
   npm test
   ```
 - Save and check the build by clicking `BUILD NOW`
+
+### Create a merge job
+- Follow the same steps as above and add the following changes
+- Additional behaviours and choose `merge before build`
+```
+origin
+main
+```
+- In execute shell add 
+````
+git checkout main
+git merge origin/dev
+````
+- In Post build actions choose `Git Publisher` and tick `Push only if build succeeds` then add branch with the following
+````
+main
+origin
+````
